@@ -9,7 +9,7 @@ class App extends Component {
   }
 
   callAPI() {
-    fetch('http://localhost:9000/reverser')
+    fetch('http://localhost:9000/check')
       .then(res => res.text())
       .then(res => this.setState({ apiResponse: res }))
       .catch(err => err);
